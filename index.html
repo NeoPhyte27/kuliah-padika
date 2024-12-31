@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan 3 | CSS Dasar</title>
+    <style>
+        h1{
+            color: salmon;
+            font-family: arial;
+            font-size: 80px;
+        }
+
+        p{
+            color: green;
+        }
+
+        h3.paragraf2{
+            color: blue;
+        }
+
+        h3 span{
+            color: salmon;
+        }
+
+        #p3{
+            color: orange;
+        }
+
+        .cetak-miring{
+            font-style: italic;
+        }
+
+        #huruf-besar{
+            text-transform: uppercase;
+        }
+
+        ul li a{
+            color: red;
+        }
+
+        .itw{
+            font-size: 30px;
+            text-align: center;
+            color: blue;
+        }
+
+        .itw:hover{
+            color: salmon;
+            font-size: 35px;
+            text-transform: uppercase;
+            text-decoration: line-through;
+        }
+
+        ol li a:hover{
+            text-decoration: none;
+            background-color: red;
+            color: white;
+        }
+
+        .kotak{
+            width: 160px;
+            height: 160px;
+            background-color: salmon;
+            margin: auto;
+            display: flex;
+            transition: 1s;
+        }
+
+        .kotak:hover{
+            border-radius: 50%;
+            background-color: blue;
+            transform: rotate(360deg);
+        }
+
+        .kotak-kecil{
+            width: 80px;
+            height: 80px;
+            background-color: aqua;
+            margin: auto;
+            transform: rotate(45deg);
+            display: flex;
+        }
+
+        .kotak-kecil:hover{
+            border-radius: 90% 0 90% 0;
+        }
+
+        .kecil-kotak{
+            width: 40px;
+            height: 40px;
+            background-color: black;
+            margin: auto;
+            display: flex;
+                    }
+
+        .kecil-kotak:hover{
+            border-radius: 0 90% 0 90%;
+        }
+
+        .putih{
+            width: 20px;
+            height: 20px;
+            background-color: white;
+            margin: auto;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <!-- Membahas mengenai CSS Dasar -->
+    <h1 class="cetak-miring" id="huruf-besar">Pertemuan 5 ITW</h1>
+    <h3 class="paragraf2">Aldirisky <span>Pratama</span></h3>
+    <p>paragraf 1</p>
+    <p class="paragraf2 cetak-miring">paragraf 2</p>
+    <p id="p3">paragraf 3</p>
+
+    <ul>
+        <li><a href="">link 1</a></li>
+        <li><a href="">link 2</a></li>
+        <li><a href="">link 3</a></li>
+        <li><a href="">link 4</a></li>
+        <li><a href="">link 5</a></li>
+    </ul>
+
+    <ol>
+        <li><a href="">link 1</a></li>
+        <li><a href="">link 2</a></li>
+        <li><a href="">link 3</a></li>
+        <li><a href="">link 4</a></li>
+        <li><a href="">link 5</a></li>
+    </ol>
+
+    <a href="">Ini link di luar list</a>
+
+    <h3 class="itw">Internet dan Teknologi Web</h3>
+
+    <div class="kotak">
+        <div class="kotak-kecil">
+            <div class="kecil-kotak">
+                <div class="putih"></div>
+            </div>
+        </div>
+    </div>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+</body>
+</html>
