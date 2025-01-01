@@ -5,24 +5,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Layouting</title>
     <style>
+        *{
+            margin: 0;
+            padding: 0;
+            clear: both;
+        }
+
+        body{
+            position: relative;
+        }
         h1{
             background-color: lightblue;
+            margin-top: 35px;
+        }
+
+        .nav{
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+            text-align: center;
+            background-color: salmon;
+            height: 35px;
+            line-height: 35px;
         }
 
         a{
+            display: inline-block;
+            width: 100px;
+            height: 30px;
+            text-align: center;
+            background-color: white;
+            line-height: 30px;
+            text-decoration: none;
+            color: salmon;
+            margin-right: 20px;
+            border-radius: 20px;
+            text-transform: uppercase;
+        }
+
+        a:hover{
+            color: black;
+        }
+
+        .kotak1{
+            background-color: skyblue;
+            width: 67%;
+            height: 60px;
+            overflow: hidden;
+        }
+
+        .kotak2{
+            width: 100px;
+            height: 100px;
             background-color: salmon;
+            margin: 30px auto;
+            border: 5px  double royalblue;
+            box-sizing: border-box;
+        }
+
+        p{
+            width: 33%;
+            background-color: salmon;
+            position: absolute;
+            right: 0;
+            top: 38px;
         }
     </style>
 </head>
 <body>
+    <div class="nav">
+        <a href="">Home</a>
+        <a href="">About</a>
+        <a href="">Service</a>
+        <a href="">Project</a>
+        <a href="">Contact</a>
+    </div>
+
     <h1>Halo ITW</h1>
-    <a href="">Link 1</a>
-    <a href="">Link 2</a>
-    <a href="">Link 3</a>
-    <a href="">Link 4</a>
-    <a href="">Link 5</a>
-    <ul>
-        <li>Halo</li>
-    </ul>
+
+    <div class="kotak1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, veniam? Inventore amet atque, temporibus exercitationem rem animi architecto deserunt fugiat eum fugit earum dolore corporis esse, nam ipsa, sunt ipsam.</div>
+
+    <div class="kotak2"></div>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore laborum pariatur quisquam quasi assumenda numquam animi harum recusandae earum fugiat, illum sunt fuga accusamus nihil, sit eveniet, corrupti repudiandae repellat.</p>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 </body>
 </html>
